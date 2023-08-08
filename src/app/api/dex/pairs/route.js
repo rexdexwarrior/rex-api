@@ -26,8 +26,8 @@ query getDex{
 
 export async function GET()
 {
-    let retVal = 'N/A';
+   // let retVal = 'N/A';
     let ret = await axios.post('https://thegraph.one/subgraphs/name/rexdex/rexdex-subgraph', {query: query});
-    console.log('ret',ret.data)
+    //console.log('ret',ret.data)
     return NextResponse.json(ret.data.data)
 }
